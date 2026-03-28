@@ -6,98 +6,26 @@
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:'Inter',sans-serif;background:#f8fafc;color:#1e293b}
 
-    /* NAVBAR */
-    header{
-      position:sticky;
-      top:0;
-      background:linear-gradient(90deg,#6b21a8,#9333ea);
-      padding:15px 20px;
-      box-shadow:0 4px 15px rgba(0,0,0,0.1);
-      z-index:100;
-    }
+    header{position:sticky;top:0;background:linear-gradient(90deg,#6b21a8,#9333ea);padding:15px 20px;box-shadow:0 4px 15px rgba(0,0,0,0.1);z-index:100}
+    nav{display:flex;justify-content:space-between;align-items:center;max-width:1000px;margin:auto}
+    nav h1{color:white;font-size:18px;letter-spacing:1px}
+    nav .links a{color:#ede9fe;margin-left:15px;text-decoration:none;font-size:14px;position:relative}
+    nav .links a::after{content:'';position:absolute;left:0;bottom:-4px;width:0%;height:2px;background:white;transition:0.3s}
+    nav .links a:hover::after{width:100%}
 
-    nav{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      max-width:1000px;
-      margin:auto;
-    }
+    .hero{background:linear-gradient(120deg,#ede9fe,#f5f3ff);text-align:center;padding:40px 20px}
+    .hero h2{color:#6b21a8;font-size:26px}
+    .hero p{margin-top:8px;color:#475569}
 
-    nav h1{
-      color:white;
-      font-size:18px;
-      letter-spacing:1px;
-    }
-
-    nav .links a{
-      color:#ede9fe;
-      margin-left:15px;
-      text-decoration:none;
-      font-size:14px;
-      position:relative;
-    }
-
-    nav .links a::after{
-      content:'';
-      position:absolute;
-      left:0;
-      bottom:-4px;
-      width:0%;
-      height:2px;
-      background:white;
-      transition:0.3s;
-    }
-
-    nav .links a:hover::after{
-      width:100%;
-    }
-
-    /* HERO */
-    .hero{
-      background:linear-gradient(120deg,#ede9fe,#f5f3ff);
-      text-align:center;
-      padding:50px 20px;
-    }
-
-    .hero h2{
-      color:#6b21a8;
-      font-size:28px;
-    }
-
-    .hero p{
-      margin-top:10px;
-      color:#475569;
-    }
-
-    /* SECTIONS */
     section{max-width:900px;margin:auto;padding:30px 20px;border-bottom:1px solid #e5e7eb}
-
     h2{color:#6b21a8;border-bottom:2px solid #6b21a8;padding-bottom:5px;margin-bottom:15px}
-
-    /* CARDS */
-    .card{
-      background:white;
-      padding:15px;
-      margin:10px 0;
-      border-radius:10px;
-      border:1px solid #e5e7eb;
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-3px);
-      box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    }
 
     .item{margin-bottom:20px}
     .title{font-weight:600}
     .sub{color:#64748b;font-size:14px}
 
     ul{padding-left:18px}
-
     .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-
     footer{text-align:center;padding:20px;color:#64748b}
 
     @media(max-width:600px){
@@ -106,7 +34,7 @@
     }
   </style></head><body><header>
   <nav>
-    <h1>RAFI SARKER</h1>
+    <h1>MOHHAMMAD RAFI SARKER</h1>
     <div class="links">
       <a href="#about">Summary</a>
       <a href="#experience">Experience</a>
@@ -116,43 +44,75 @@
     </div>
   </nav>
 </header><div class="hero">
-  <h2>Executive Engineer | Civil Engineer</h2>
-  <p>Design • Execution • Project Management • Cost Optimization</p>
+  <h2>Civil Engineer</h2>
+  <p>Boro Nagar, Sonargaon, Narayanganj, Dhaka • +880 1676737322 • m.rafisarker@gmail.com</p>
 </div><section id="about">
   <h2>SUMMARY</h2>
-  <p>As a passionate civil engineer, I’m eager to apply my skills in design, cost estimation, field operations, and project management to deliver innovative solutions. With hands-on experience in client relations and ensuring industry compliance, I’m committed to driving high-quality results and growing both technically and professionally.</p>
+  <p>As a passionate civil engineer, I’m eager to apply my skills in design, cost estimation, field operations, and project management to deliver innovative solutions. With hands-on experience in client relations and ensuring industry compliance, I’m committed to driving high-quality results and growing both technically and professionally in a challenging role.</p>
 </section><section id="experience">
   <h2>WORK EXPERIENCE</h2>  <div class="item">
-    <div class="title">Executive Engineer – Promise Proper Development Ltd.</div>
+    <div class="title">Promise Proper Development Ltd. | Executive Engineer</div>
     <div class="sub">May 2025 - Present</div>
     <ul>
-      <li>Managed field and desk engineering tasks across projects</li>
-      <li>Led teams to deliver quality work within budget</li>
-      <li>Ensured safety and industry compliance</li>
-      <li>Handled project timelines, reports, and coordination</li>
+      <li>Managed field and desk engineering tasks across various projects.</li>
+      <li>Led a team to deliver high-quality solutions on time and within budget.</li>
+      <li>Supervised design, development, and maintenance of engineering systems.</li>
+      <li>Ensured compliance with safety and industry standards.</li>
+      <li>Conducted site inspections and resolved issues promptly.</li>
+      <li>Managed project timelines, budgets, and corrective actions.</li>
+      <li>Provided technical support to teams.</li>
+      <li>Prepared detailed progress reports and documentation.</li>
+      <li>Coordinated with contractors and stakeholders for project alignment.</li>
+      <li>Oversaw quality control to maintain structural integrity.</li>
+      <li>Proposed cost-effective engineering solutions.</li>
+      <li>Contributed to planning and execution of engineering strategies.</li>
     </ul>
   </div>  <div class="item">
-    <div class="title">Project Engineer – Sarker Design & Build</div>
+    <div class="title">Sarker Design & Build | Project Engineer</div>
     <div class="sub">Jun 2023 - Feb 2025</div>
     <ul>
-      <li>Led design and execution of residential and commercial projects</li>
-      <li>Supervised site work and ensured quality control</li>
-      <li>Managed client and contractor coordination</li>
+      <li>Led design and field engineering tasks for residential and commercial projects.</li>
+      <li>Developed engineering plans and blueprints, ensuring compliance with regulations.</li>
+      <li>Supervised site activities, ensuring projects adhered to timelines and budgets.</li>
+      <li>Conducted site inspections, ensuring quality control and safety standards.</li>
+      <li>Coordinated with contractors, and clients to streamline workflows.</li>
+      <li>Provided technical guidance and support to construction teams.</li>
+      <li>Monitored project progress, identifying risks and resolving issues efficiently.</li>
+      <li>Assisted in material selection and ensured cost-effective project execution.</li>
     </ul>
   </div>  <div class="item">
-    <div class="title">Junior Engineer – Green Building Consultant</div>
+    <div class="title">Green Building Consultant | Junior Engineer</div>
     <div class="sub">Nov 2021 - Dec 2022</div>
     <ul>
-      <li>Prepared architectural and structural drawings</li>
-      <li>Performed cost estimation and budgeting</li>
-      <li>Handled client relations and reporting</li>
+      <li>Designed architectural, structural, electrical, and plumbing drawings.</li>
+      <li>Performed cost estimation and created budget forecasts.</li>
+      <li>Managed client relations and ensured project satisfaction.</li>
+      <li>Handled office tasks: scheduling, documentation, and coordination.</li>
+      <li>Conducted site visits for compliance and quality checks.</li>
+      <li>Collaborated with engineering team to resolve technical issues.</li>
+      <li>Prepared reports, feasibility studies, and documentation.</li>
     </ul>
+  </div>  <div class="item">
+    <div class="title">Building Planner | Intern</div>
+    <div class="sub">Sep 2020 - Nov 2021</div>
+    <ul>
+      <li>Assisted with drafting architectural, structural, electrical, plumbing designs.</li>
+      <li>Supported accounting tasks, including invoices and budgeting.</li>
+      <li>Managed office tasks such as scheduling, filing, and correspondence.</li>
+      <li>Provided administrative support to senior engineers and project managers.</li>
+      <li>Contributed to marketing, helping with promotional materials and client outreach.</li>
+      <li>Provided technical support on office management.</li>
+    </ul>
+  </div>  <div class="item">
+    <div class="title">Prottasha Foundation | Foundar</div>
+    <div class="sub">2016 - Present</div>
+    <p>A Social Work Foundation to Assist Vulnerable Individuals.</p>
   </div></section><section id="skills">
   <h2>SKILLS & EXPERTISE</h2>
   <div class="grid">
     <div>
       <ul>
-        <li>Architectural Drawings</li>
+        <li>Architectural drawings</li>
         <li>Structural Design</li>
         <li>Client Dealing</li>
         <li>Site Management</li>
@@ -160,27 +120,55 @@
     </div>
     <div>
       <ul>
-        <li>AutoCAD</li>
-        <li>ETABS</li>
-        <li>Revit (BIM)</li>
+        <li>AutoCad (Drafting)</li>
+        <li>Etabs (Structure)</li>
+        <li>Revit (3D, BIM)</li>
         <li>Microsoft Office</li>
       </ul>
     </div>
   </div>
+</section><section>
+  <h2>LANGUAGE</h2>
+  <ul>
+    <li>English (Fluent)</li>
+    <li>Hindi (Comunicative)</li>
+    <li>Bangla (Native)</li>
+  </ul>
 </section><section id="education">
   <h2>EDUCATION</h2>
   <ul>
-    <li>B.Sc in Civil Engineering – Faridpur Engineering College (2023) | CGPA 2.81/4.00</li>
-    <li>HSC – Dr. Mahbubur Rahman Mollah College | GPA 4.92</li>
-    <li>SSC – Mograpara H.G.G.S Smrity Biddayoton | GPA 5.00</li>
+    <li>Bachelor of Science – Faridpur Engineering College (2023) | CGPA 2.81 out of 4.00</li>
+    <li>Higher Secondary School Certificate (HSC) – Dr. Mahbubur Rahman Mollah College | GPA 4.92 out of 5.00</li>
+    <li>Secondary School Certificate (SSC) – Mograpara H.G.G.S Smrity Biddayoton | GPA 5.00 out of 5.00</li>
   </ul>
+</section><section>
+  <h2>ADDITIONAL INFORMATION</h2>
+  <ul>
+    <li>Architectural drawings</li>
+    <li>Structural Design</li>
+    <li>Client Dealing</li>
+    <li>Site Management</li>
+  </ul>
+  <ul>
+    <li>AutoCad (Drafting)</li>
+    <li>Etabs (Structure)</li>
+    <li>Revit (3D, BIM)</li>
+    <li>Microsoft Office</li>
+  </ul>
+  <ul>
+    <li>English (Fluent)</li>
+    <li>Hindi (Comunicative)</li>
+    <li>Bangla (Native)</li>
+  </ul>
+</section><section>
+  <h2>REFFERENCE</h2>
+  <p><strong>Prof. Dr. Mizanur Rahman</strong><br>Principal<br>Mymensing Engineering College<br>01911938473</p>
+  <p><strong>Raihan Khan Opu</strong><br>Assistant professor and head<br>Faridpur Engineering College<br>Civil Department<br>01819425553</p>
 </section><section id="contact">
   <h2>CONTACT</h2>
-  <div class="card">
-    <p>Email: m.rafisarker@gmail.com</p>
-    <p>Phone: +8801676737322</p>
-    <p>LinkedIn: https://www.linkedin.com/in/rafi-sarker</p>
-  </div>
+  <p>📞 +880 1676737322</p>
+  <p>✉️ m.rafisarker@gmail.com</p>
+  <p>LinkedIn: https://www.linkedin.com/in/rafi-sarker</p>
 </section><footer>
   <p>© 2026 Mohammad Rafi Sarker</p>
 </footer></body>
