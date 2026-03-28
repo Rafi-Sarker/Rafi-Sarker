@@ -1,121 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Civil Engineer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Rafi Sarker | Civil Engineer</title>
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family: 'Inter', sans-serif; color: #111; line-height: 1.6; }
-    a { text-decoration: none; color: inherit; }
-
-    header { width: 100%; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; background: #fff; position: sticky; top: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.05); z-index: 1000; }
-    header h1 { font-weight: 700; font-size: 1.8rem; }
-    nav a { margin-left: 25px; font-weight: 600; transition: 0.3s; }
-    nav a:hover { color: #007BFF; }
-
-    .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 90vh; background: linear-gradient(135deg, #007BFF 0%, #00C6FF 100%); color: #fff; text-align: center; padding: 0 20px; }
-    .hero h2 { font-size: 2.5rem; margin-bottom: 10px; }
-    .hero p { font-size: 1.2rem; max-width: 600px; margin-bottom: 20px; }
-    .hero a.button { background: #fff; color: #007BFF; padding: 12px 25px; border-radius: 5px; font-weight: 600; transition: 0.3s; }
-    .hero a.button:hover { background: #f0f0f0; }
-
-    .projects { padding: 80px 50px; background: #f9f9f9; }
-    .projects h2 { text-align: center; font-size: 2rem; margin-bottom: 50px; }
-    .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-    .project-card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
-    .project-card:hover { transform: translateY(-5px); }
-    .project-card img { width: 100%; height: 180px; object-fit: cover; }
-    .project-card .content { padding: 20px; }
-    .project-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
-    .project-card p { font-size: 0.95rem; color: #555; margin-bottom: 10px; }
-    .project-card a { color: #007BFF; font-weight: 600; }
-
-    .about { padding: 80px 50px; display: flex; flex-direction: row; align-items: center; gap: 50px; }
-    .about img { width: 300px; border-radius: 10px; }
-    .about .text { max-width: 600px; }
-    .about h2 { font-size: 2rem; margin-bottom: 20px; }
-    .about p { font-size: 1rem; color: #555; margin-bottom: 10px; }
-
-    .contact { padding: 80px 50px; background: #007BFF; color: #fff; text-align: center; }
-    .contact h2 { font-size: 2rem; margin-bottom: 20px; }
-    .contact p { margin-bottom: 30px; font-size: 1.1rem; }
-    .contact a.button { background: #fff; color: #007BFF; padding: 12px 25px; border-radius: 5px; font-weight: 600; transition: 0.3s; }
-    .contact a.button:hover { background: #f0f0f0; }
-
-    footer { padding: 20px 50px; text-align: center; font-size: 0.9rem; color: #777; }
-
-    @media(max-width: 900px) { .about { flex-direction: column; text-align: center; } .about img { margin-bottom: 30px; } }
+    body { font-family: Arial, sans-serif; margin: 0; background:#0f172a; color:#e2e8f0; }
+    header { background:#020617; padding:20px; text-align:center; }
+    header h1 { margin:0; color:#f43f5e; }
+    nav a { margin:0 10px; color:#94a3b8; text-decoration:none; }
+    section { padding:40px 20px; max-width:900px; margin:auto; }
+    h2 { color:#f43f5e; }
+    .card { background:#020617; padding:20px; margin:10px 0; border-radius:10px; }
+    footer { text-align:center; padding:20px; background:#020617; }
   </style>
 </head>
-<body>
-
-  <header>
-    <h1>Your Name</h1>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Hello, I'm Your Name</h2>
-    <p>A Civil Engineer with experience in residential, commercial, and real estate projects. I specialize in structural design, project management, and sustainable construction.</p>
-    <a href="#projects" class="button">See My Work</a>
-  </section>
-
-  <section class="projects" id="projects">
-    <h2>My Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="project1.jpg" alt="Residential Building Project">
-        <div class="content">
-          <h3>Residential Building Project</h3>
-          <p>Managed structural design and on-site execution for a multi-storey residential building. Technologies used: AutoCAD, STAAD Pro.</p>
-          <a href="#">View Details →</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="project2.jpg" alt="Commercial Complex">
-        <div class="content">
-          <h3>Commercial Complex</h3>
-          <p>Led the civil works team, coordinated contractors, and ensured timely delivery of a commercial project in urban area.</p>
-          <a href="#">View Details →</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="project3.jpg" alt="Real Estate Development">
-        <div class="content">
-          <h3>Real Estate Development</h3>
-          <p>Currently handling multiple residential real estate projects with focus on sustainable design and efficiency.</p>
-          <a href="#">View Details →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <img src="profile.jpg" alt="Your Name">
-    <div class="text">
-      <h2>About Me</h2>
-      <p>I am a dedicated Civil Engineer with years of experience in planning, designing, and managing diverse construction projects.</p>
-      <p>My expertise includes project management, structural analysis, real estate development, and sustainable construction practices.</p>
-      <p>I thrive on delivering projects that are not only structurally sound but also aesthetically appealing and cost-effective.</p>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <p>Interested in collaborating or hiring me for your project? Let's connect!</p>
-    <a href="mailto:your.email@example.com" class="button">Email Me</a>
-  </section>
-
-  <footer>
-    &copy; 2026 Your Name. All rights reserved.
-  </footer>
-
-</body>
+<body><header>
+  <h1>Mohammad Rafi Sarker</h1>
+  <p>Civil Engineer | Designer | Site Manager</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><section id="about">
+  <h2>About Me</h2>
+  <p>I am a civil engineer focused on building design, structural planning, and construction management. I have experience in handling projects from design to execution while ensuring quality and cost efficiency.</p>
+</section><section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>Construction Site Manager (2023 - Present)</h3>
+    <p>Managing site operations, coordinating teams, ensuring project completion within budget and time.</p>
+  </div>
+  <div class="card">
+    <h3>Green Building Consultant (2021 - 2022)</h3>
+    <p>Worked on architectural and structural design along with client management.</p>
+  </div>
+  <div class="card">
+    <h3>Building Planner Intern (2020 - 2021)</h3>
+    <p>Worked as draftsman and assisted in planning and management tasks.</p>
+  </div>
+</section><section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <p>AutoCAD, ETABS, Revit (BIM), Microsoft Office</p>
+    <p>Structural Design, Architectural Planning, Site Management, Client Handling</p>
+  </div>
+</section><section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <p>Worked on multiple residential building projects including planning, design, and execution phases.</p>
+  </div>
+</section><section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: m.rafisarker@gmail.com</p>
+    <p>Phone: +8801676737322</p>
+  </div>
+</section><footer>
+  <p>© 2026 Mohammad Rafi Sarker</p>
+</footer></body>
 </html>
