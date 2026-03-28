@@ -2,48 +2,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohammad Rafi Sarker | CV Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#ffffff; color:#1e293b; }/* HEADER (premium dark) */
-header { background:#020617; padding:25px 20px; text-align:center; }
-header h1 { margin:0; color:#f43f5e; }
-header p { margin:5px 0; color:#94a3b8; }
-nav a { margin:0 10px; color:#94a3b8; text-decoration:none; }
+  <title>Mohammad Rafi Sarker | CV Portfolio</title>  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Inter',sans-serif;background:#f8fafc;color:#1e293b}
 
-section { max-width:900px; margin:auto; padding:30px 20px; border-bottom:1px solid #e5e7eb; }
+    /* NAVBAR */
+    header{
+      position:sticky;
+      top:0;
+      background:linear-gradient(90deg,#6b21a8,#9333ea);
+      padding:15px 20px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+      z-index:100;
+    }
 
-/* CV style headings (purple) */
-h2 { color:#6b21a8; border-bottom:2px solid #6b21a8; padding-bottom:5px; margin-bottom:15px; }
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      max-width:1000px;
+      margin:auto;
+    }
 
-.card { background:#ffffff; padding:15px; margin:10px 0; border-radius:6px; border:1px solid #e5e7eb; }
+    nav h1{
+      color:white;
+      font-size:18px;
+      letter-spacing:1px;
+    }
 
-.item { margin-bottom:20px; }
-.title { font-weight:bold; }
-.sub { color:#64748b; font-size:14px; }
+    nav .links a{
+      color:#ede9fe;
+      margin-left:15px;
+      text-decoration:none;
+      font-size:14px;
+      position:relative;
+    }
 
-ul { padding-left:18px; }
+    nav .links a::after{
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-4px;
+      width:0%;
+      height:2px;
+      background:white;
+      transition:0.3s;
+    }
 
-.grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    nav .links a:hover::after{
+      width:100%;
+    }
 
-footer { text-align:center; padding:20px; font-size:14px; color:#64748b; }
+    /* HERO */
+    .hero{
+      background:linear-gradient(120deg,#ede9fe,#f5f3ff);
+      text-align:center;
+      padding:50px 20px;
+    }
 
-@media(max-width:600px){
-  .grid { grid-template-columns:1fr; }
-}
+    .hero h2{
+      color:#6b21a8;
+      font-size:28px;
+    }
 
-  </style>
-</head>
-<body><header>
-  <h1>Mohammad Rafi Sarker</h1>
-  <p>Executive Engineer | Civil Engineer | Project Manager</p>
+    .hero p{
+      margin-top:10px;
+      color:#475569;
+    }
+
+    /* SECTIONS */
+    section{max-width:900px;margin:auto;padding:30px 20px;border-bottom:1px solid #e5e7eb}
+
+    h2{color:#6b21a8;border-bottom:2px solid #6b21a8;padding-bottom:5px;margin-bottom:15px}
+
+    /* CARDS */
+    .card{
+      background:white;
+      padding:15px;
+      margin:10px 0;
+      border-radius:10px;
+      border:1px solid #e5e7eb;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-3px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .item{margin-bottom:20px}
+    .title{font-weight:600}
+    .sub{color:#64748b;font-size:14px}
+
+    ul{padding-left:18px}
+
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+
+    footer{text-align:center;padding:20px;color:#64748b}
+
+    @media(max-width:600px){
+      .grid{grid-template-columns:1fr}
+      nav{flex-direction:column;gap:10px}
+    }
+  </style></head><body><header>
   <nav>
-    <a href="#about">Summary</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
+    <h1>RAFI SARKER</h1>
+    <div class="links">
+      <a href="#about">Summary</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
-</header><section id="about">
+</header><div class="hero">
+  <h2>Executive Engineer | Civil Engineer</h2>
+  <p>Design • Execution • Project Management • Cost Optimization</p>
+</div><section id="about">
   <h2>SUMMARY</h2>
   <p>As a passionate civil engineer, I’m eager to apply my skills in design, cost estimation, field operations, and project management to deliver innovative solutions. With hands-on experience in client relations and ensuring industry compliance, I’m committed to driving high-quality results and growing both technically and professionally.</p>
 </section><section id="experience">
@@ -72,17 +147,6 @@ footer { text-align:center; padding:20px; font-size:14px; color:#64748b; }
       <li>Performed cost estimation and budgeting</li>
       <li>Handled client relations and reporting</li>
     </ul>
-  </div>  <div class="item">
-    <div class="title">Intern – Building Planner</div>
-    <div class="sub">Sep 2020 - Nov 2021</div>
-    <ul>
-      <li>Assisted drafting and office management</li>
-      <li>Supported budgeting and documentation</li>
-    </ul>
-  </div>  <div class="item">
-    <div class="title">Co-Founder – Prottasha Foundation</div>
-    <div class="sub">2016 - Present</div>
-    <p>Social work foundation supporting vulnerable individuals.</p>
   </div></section><section id="skills">
   <h2>SKILLS & EXPERTISE</h2>
   <div class="grid">
@@ -103,13 +167,6 @@ footer { text-align:center; padding:20px; font-size:14px; color:#64748b; }
       </ul>
     </div>
   </div>
-</section><section>
-  <h2>LANGUAGE</h2>
-  <ul>
-    <li>English (Fluent)</li>
-    <li>Hindi (Communicative)</li>
-    <li>Bangla (Native)</li>
-  </ul>
 </section><section id="education">
   <h2>EDUCATION</h2>
   <ul>
