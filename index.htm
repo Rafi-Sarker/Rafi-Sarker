@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    /* Reset & Base Styles */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Inter', sans-serif; color: #111; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header {
+      width: 100%;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+    header h1 { font-weight: 700; font-size: 1.8rem; }
+    nav a { margin-left: 25px; font-weight: 600; transition: 0.3s; }
+    nav a:hover { color: #007BFF; }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 90vh;
+      background: linear-gradient(135deg, #007BFF 0%, #00C6FF 100%);
+      color: #fff;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.2rem; max-width: 600px; margin-bottom: 20px; }
+    .hero a.button { background: #fff; color: #007BFF; padding: 12px 25px; border-radius: 5px; font-weight: 600; transition: 0.3s; }
+    .hero a.button:hover { background: #f0f0f0; }
+
+    /* Projects Section */
+    .projects {
+      padding: 80px 50px;
+      background: #f9f9f9;
+    }
+    .projects h2 { text-align: center; font-size: 2rem; margin-bottom: 50px; }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img { width: 100%; height: 180px; object-fit: cover; }
+    .project-card .content { padding: 20px; }
+    .project-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+    .project-card p { font-size: 0.95rem; color: #555; margin-bottom: 10px; }
+    .project-card a { color: #007BFF; font-weight: 600; }
+
+    /* About Section */
+    .about {
+      padding: 80px 50px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 50px;
+    }
+    .about img { width: 300px; border-radius: 10px; }
+    .about .text { max-width: 600px; }
+    .about h2 { font-size: 2rem; margin-bottom: 20px; }
+    .about p { font-size: 1rem; color: #555; }
+
+    /* Contact Section */
+    .contact {
+      padding: 80px 50px;
+      background: #007BFF;
+      color: #fff;
+      text-align: center;
+    }
+    .contact h2 { font-size: 2rem; margin-bottom: 20px; }
+    .contact p { margin-bottom: 30px; font-size: 1.1rem; }
+    .contact a.button { background: #fff; color: #007BFF; padding: 12px 25px; border-radius: 5px; font-weight: 600; transition: 0.3s; }
+    .contact a.button:hover { background: #f0f0f0; }
+
+    /* Footer */
+    footer {
+      padding: 20px 50px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* Responsive */
+    @media(max-width: 900px) {
+      .about { flex-direction: column; text-align: center; }
+      .about img { margin-bottom: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Hello, I'm Your Name</h2>
+    <p>A passionate developer creating modern and user-friendly digital experiences. Explore my work below!</p>
+    <a href="#projects" class="button">See My Work</a>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <!-- Example Project Card -->
+      <div class="project-card">
+        <img src="project1.jpg" alt="Project 1">
+        <div class="content">
+          <h3>Project Title 1</h3>
+          <p>Brief description of your project. Tech stack, purpose, or role.</p>
+          <a href="#">View Project →</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="project2.jpg" alt="Project 2">
+        <div class="content">
+          <h3>Project Title 2</h3>
+          <p>Brief description of your project. Tech stack, purpose, or role.</p>
+          <a href="#">View Project →</a>
+        </div>
+      </div>
+      <!-- Add more project cards here -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <img src="profile.jpg" alt="Your Name">
+    <div class="text">
+      <h2>About Me</h2>
+      <p>Introduce yourself to potential employers. Mention your skills, experience, and what drives you. Keep it concise but impactful.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Interested in working together? Let's connect!</p>
+    <a href="mailto:your.email@example.com" class="button">Email Me</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Your Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
